@@ -7,6 +7,22 @@
 
 // Summing an array of numbers:
 
+const nums = [0, 1, 2, 3, 4];
+let sum = nums.reduce((acc, curr) => acc + curr, 0); // 0 is the initial value
+console.log(sum);
+
+// see how it works
+let sumExpanded = nums.reduce((acc, curr) => {
+    console.log(
+        "Accumulator:", acc,
+        "Current Value:", curr,
+        "Total:", acc + curr
+    )
+    return acc + curr;
+}, 0); // 0 is the Explicit initial value here. Don't have to specify this 
+console.log(sumExpanded);
+
+
 
 const teamMembers = [
   {
